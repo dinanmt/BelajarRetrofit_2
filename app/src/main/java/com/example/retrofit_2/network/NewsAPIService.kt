@@ -14,7 +14,7 @@ private val retrofit = Retrofit.Builder()
 
 interface NewsAPIService {
 //    @GET("everything?q=tesla&from=2022-10-15&sortBy=publishedAt&apiKey=9da2ec6a15634ea09aab3cc7868c552e")
-    @GET("everything?q=tesla&from=2022-10-15&sortBy=publishedAt&apiKey=8545a8cb50b4454c8dd2c195e892e94a")
+    @GET("top-headlines?country=us&apiKey=2a78c5b43e5847ac8f95fc1d5fa310d1")
     suspend fun getEverything(): NewsData
 
 }
